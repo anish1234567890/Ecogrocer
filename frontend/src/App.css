@@ -1,0 +1,1149 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #45c647;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  
+  .navbar-brand a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  .navbar-links a,
+  .navbar-auth a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar-links a:hover,
+  .navbar-auth a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search Bar Styling */
+  .navbar-search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-search input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .navbar-search button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c12424;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .navbar-search button:hover {
+    background-color: #000000;
+  }
+
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.mainhead{
+  text-align: center;
+}
+
+/* Farm Container */
+.farm-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Farm Box */
+.farm-box {
+  position: relative;
+  width: 220px; /* Adjusted width */
+  padding: 15px; /* Adjusted padding */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: white;
+}
+
+.farm-box:hover {
+  transform: translateY(-10px);
+}
+
+.farm-logo {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.farm-box h3 {
+  margin: 10px 0;
+}
+
+.farm-box p {
+  margin-bottom: 15px; /* Adjusted margin */
+}
+
+.go-to-farm {
+  display: none;
+  position: absolute;
+  bottom: 15px; /* Adjusted for reduced size */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 15px; /* Adjusted padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.farm-box:hover .go-to-farm {
+  display: block;
+}
+
+.go-to-farm:hover {
+  background-color: #c0392b;
+}
+
+.farm{
+  text-align: center;
+}
+/* Products Container */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adjusted size */
+  gap: 15px; /* Adjusted gap */
+  margin-top: 15px; /* Adjusted margin */
+  padding: 0 15px; /* Adjusted padding */
+}
+
+/* Product Box */
+.product {
+  border: 1px solid #ddd;
+  padding: 10px; /* Adjusted padding */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  margin-bottom: 8px; /* Adjusted margin */
+}
+
+.product h3 {
+  margin: 8px 0; /* Adjusted margin */
+}
+
+.product p {
+  margin: 4px 0; /* Adjusted margin */
+  color: #555;
+}
+
+/* Product Button */
+.product button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 15px; /* Adjusted padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 4px; /* Adjusted margin */
+  font-size: 13px; /* Adjusted font size */
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #2980b9;
+}
+
+/* Buy Now Button */
+.buy-now-button {
+  background-color: #2ecc71;
+}
+
+.buy-now-button:hover {
+  background-color: #27ae60;
+}
+
+/* Back to Farms Button */
+.farm button {
+  margin-bottom: 15px; /* Adjusted margin */
+  padding: 8px 15px; /* Adjusted padding */
+  font-size: 14px; /* Adjusted font size */
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.farm button:hover {
+  background-color: #c0392b;
+}
+
+.farm img{
+  max-width: 80vw;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+/* Login Page */
+/* Container Styling */
+.login-container {
+  background: rgba(255, 255, 255, 0.9); /* Lighten the background for better visibility */
+  backdrop-filter: blur(5px); /* Reduced blur to keep focus */
+  border-radius: 15px;
+  padding: 40px;
+  width: 350px;
+  margin: 50px auto; /* Centering the container */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Lightened shadow */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Element Styling */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container div {
+  margin-bottom: 40px;
+}
+
+/* Input Fields */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd; /* Added a border for better visibility */
+  background-color: #ffffff; /* White background for inputs */
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  color: #333; /* Darker text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-color: #3498db; /* Change border color on focus */
+}
+
+/* Button Styling */
+.login-container button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white; /* White text color for better contrast */
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #3498db;
+  }
+  100% {
+    box-shadow: 0 0 20px #2980b9;
+  }
+}
+
+/* Heading and Paragraph Styling */
+.login-container h1 {
+  text-align: center;
+  color: #333; /* Darker heading color */
+  margin-bottom: 10px;
+}
+
+.login-container p {
+  text-align: center;
+  color: #333; /* Darker paragraph color */
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.login-container label {
+  color: #333; /* Darker label color */
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/*SignUp Successfully */
+/* Container Styling */
+.signup-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 40px;
+  width: 350px;
+  margin: 50px auto; /* Centering the container */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Element Styling */
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container div {
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+.signup-container input[type="text"]:focus,
+.signup-container input[type="email"]:focus,
+.signup-container input[type="password"]:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-color: #3498db;
+}
+
+/* Button Styling */
+.signup-container button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-container button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #3498db;
+  }
+  100% {
+    box-shadow: 0 0 20px #2980b9;
+  }
+}
+
+/* Heading and Paragraph Styling */
+.signup-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.signup-container p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.signup-container label {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contactus{
+  text-align: center;
+}
+
+.aboutus{
+  text-align: center;
+}
+
+/* Cart Container Styling */
+.cart-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Title Styling */
+.cart-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Product Item Styling */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.cart-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Quantity Controls Styling */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-controls button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.quantity-controls button:hover {
+  background-color: #2980b9;
+}
+
+.quantity-controls span {
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+/* Remove Button Styling */
+.remove-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+/* Buy Now Button Styling */
+.buy-now-button {
+  background-color: #4caf50;
+  color: white;
+  width: 100%; /* Full width for the buy now button */
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+  background-color: #388e3c;
+}
+
+/* Cart Total and Delivery Charge Styling */
+.cart-total {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  text-align: right;
+  font-size: 18px;
+  color: #333;
+}
+
+.cart-total h3 {
+  margin: 10px 0;
+}
+
+.buy-now-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* product card in search bar  */
+.product-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+
+/* Payment Page Styling */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between form elements */
+}
+
+.card-element {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.payment-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.payment-status {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.payment-page {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* confermation page Styling */
+.confirmation-container {
+  background-color: #f9f9fc; /* Light gray-blue background */
+  color: #343a40; /* Dark gray text for readability */
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 600px;
+  margin: 40px auto; /* Center the confirmation box */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  text-align: center;
+}
+
+.confirmation-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00796b; /* Dark teal for title */
+  margin-bottom: 15px;
+}
+
+.confirmation-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e7d32; /* Dark green for subtitle */
+  margin-bottom: 10px;
+}
+
+.confirmation-message {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.order-summary {
+  background-color: #ffffff; /* White background for order summary */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-top: 15px;
+  text-align: left;
+}
+
+.order-summary-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #455a64; /* Muted dark teal */
+  margin-bottom: 10px;
+}
+
+.order-items-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #546e7a; /* Medium gray for item title */
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.order-items-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-items-list li {
+  background-color: #e0f2f1; /* Light teal background for items */
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: #37474f; /* Darker text for item details */
+}
+
+.confirmation-thank-you {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00796b; /* Teal for thank you message */
+  margin-top: 20px;
+}
+
+/*User Dropdown menu*/
+
+.user-dropdown {
+  position: relative;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: white; /* White background for the dropdown */
+  border: 1px solid #4CAF50; /* Green border */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 5px; /* Space between the dropdown and the trigger */
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  display: block;
+  padding: 10px 15px; /* Adjusted padding for better spacing */
+  text-decoration: none;
+  color: #4CAF50; /* Green text */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  color: #4CAF50; /* Keep text green on hover */
+}
+
+.dropdown-menu button {
+  background: none; /* No background for buttons */
+  border: none; /* Remove default button border */
+  width: 100%; /* Make button full width */
+  text-align: left; /* Align text to the left */
+}
+
+/* Optional: Style for the dropdown trigger */
+.user-dropdown .trigger {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.user-dropdown .trigger:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* orderDetail.css */
+
+.order-detail-container {
+  max-width: 800px; /* Maximum width for the order detail container */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Add padding around the content */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.order-detail-container h1 {
+  font-size: 24px; /* Size for the main heading */
+  margin-bottom: 10px; /* Space below the heading */
+  color: #5A2D91; /* Dark purple color */
+}
+
+.order-detail-container h2 {
+  font-size: 20px; /* Size for the subheading */
+  margin-bottom: 10px; /* Space below the subheading */
+  color: #333; /* Darker color for contrast */
+}
+
+.order-detail-container h3 {
+  font-size: 18px; /* Size for the section headings */
+  margin-top: 20px; /* Space above the section heading */
+  margin-bottom: 10px; /* Space below the section heading */
+  color: #5A2D91; /* Dark purple color */
+}
+
+.order-detail-container p {
+  font-size: 16px; /* Font size for paragraphs */
+  margin-bottom: 10px; /* Space below each paragraph */
+  line-height: 1.5; /* Increase line height for readability */
+  color: #555; /* Gray color for text */
+}
+
+.order-detail-container ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.order-detail-container ul li {
+  padding: 10px; /* Padding around each list item */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 10px; /* Space below each list item */
+  background-color: #fff; /* White background for list items */
+}
+
+.order-detail-container ul li strong {
+  color: #5A2D91; /* Dark purple color for product names */
+}
+
+
+/* myOrdersPage.css */
+
+.my-orders-container {
+  max-width: 800px; /* Maximum width for the orders container */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Padding around the content */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.my-orders-container h1 {
+  font-size: 24px; /* Size for the main heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #5A2D91; /* Dark purple color */
+}
+
+.my-orders-container p {
+  font-size: 16px; /* Font size for paragraphs */
+  margin-bottom: 10px; /* Space below each paragraph */
+  line-height: 1.5; /* Increase line height for readability */
+  color: #555; /* Gray color for text */
+}
+
+.my-orders-container ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.my-orders-container .order-item {
+  padding: 15px; /* Padding around each order item */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below each order item */
+  background-color: #fff; /* White background for order items */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.my-orders-container .order-item:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+.my-orders-container .order-item h2 {
+  font-size: 20px; /* Size for the order ID */
+  margin-bottom: 10px; /* Space below the order ID */
+  color: #333; /* Darker color for contrast */
+}
+
+.my-orders-container .order-item button {
+  background-color: #5A2D91; /* Dark purple background for buttons */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 15px; /* Padding around the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.my-orders-container .order-item button:hover {
+  background-color: #7A4FBD; /* Lighter purple on hover */
+}
+
+
+/* OrderDetail.css */
+
+.order-detail-container {
+  max-width: 800px; /* Set a max width for the container */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.order-detail-container h1 {
+  font-size: 24px; /* Heading size */
+  color: #5A2D91; /* Dark purple color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.order-detail-container h3 {
+  margin-top: 20px; /* Space above subheadings */
+  color: #333; /* Dark gray color for subheadings */
+}
+
+.order-detail-container ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.order-detail-container li {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space out items */
+  padding: 10px 0; /* Space above and below each product */
+  border-bottom: 1px solid #eee; /* Light gray border between products */
+}
+
+.order-detail-container li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.order-detail-container strong {
+  flex: 1; /* Allow the product name to grow */
+  color: #333; /* Dark gray color for product name */
+}
+
+.order-detail-container p {
+  margin: 0; /* Remove default margin */
+  color: #666; /* Medium gray for other text */
+}
+
+/* AddressPage.css */
+
+.address-container {
+  max-width: 600px; /* Limit the width for better readability */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.address-container h1 {
+  font-size: 24px; /* Heading size */
+  color: #45c647; /* Dark purple color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.address-container form {
+  display: flex; /* Use flexbox for the form */
+  flex-direction: column; /* Stack inputs vertically */
+}
+
+.address-container div {
+  display: flex; /* Use flexbox for each input container */
+  flex-direction: column; /* Stack label and input vertically */
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+.address-container label {
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Make labels bold */
+}
+
+/* Adjust label width for consistency */
+.address-container label {
+  min-width: 120px; /* Set a minimum width for labels */
+}
+
+.address-container input {
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size for inputs */
+  flex: 1; /* Allow input to take full width */
+}
+
+.address-container button {
+  padding: 10px; /* Padding for the button */
+  background-color: #45c647; /* Dark purple background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.address-container button:hover {
+  background-color: #388e3c; /* Lighter purple on hover */
+}
+
+/*Admin Dashboard*/
+.admin-dashboard {
+    padding: 20px;
+    background-color: #f0f8f5; /* Light green background */
+    color: #2c3e50; /* Darker text color */
+}
+
+.admin-dashboard-title {
+    color: #27ae60; /* Green title color */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.admin-dashboard-subtitle {
+    color: #16a085; /* Teal subtitle color */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.admin-dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-dashboard-table th, .admin-dashboard-table td {
+    border: 1px solid #27ae60; /* Green border */
+    padding: 10px;
+    text-align: left;
+}
+
+.admin-dashboard-table th {
+    background-color: #2ecc71; /* Green header */
+    color: white;
+}
+
+.admin-dashboard-table tr:nth-child(even) {
+    background-color: #e8f8f5; /* Light green for even rows */
+}
+
+.admin-dashboard-table tr:hover {
+    background-color: #eff0f0; /* Hover effect */
+}
+
+.admin-dashboard-button {
+    background-color: #27ae60; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.admin-dashboard-button:hover {
+    background-color: #219150; /* Darker green on hover */
+}
+
+.admin-dashboard-no-orders {
+    color: #e74c3c; /* Red color for no orders */
+}
+/* Admin OrderDetails */
+.admin-order-details {
+  background-color: #f0f4f8; /* Soft light gray-blue background */
+  color: #343a40; /* Dark gray text for better readability */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px; /* Max width for the box */
+  margin: 20px auto; /* Center the box */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+.order-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #0056b3; /* Dark blue color for the title */
+}
+
+.order-id, .user-name, .product-title, .total-amount, .address-title, .payment-status, .timestamp {
+  margin: 10px 0;
+}
+
+.product-list {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+}
+
+.product-item {
+  background-color: #e2e6ea; /* Light gray background for product items */
+  color: #495057; /* Darker gray text for product items */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.loading {
+  text-align: center;
+  color: #6c757d; /* Medium gray for loading text */
+}
+
+/* Status Change Buttons */
+.status-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.status-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.status-button.placed {
+  background-color: #007bff; /* Blue */
+}
+
+.status-button.placed:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+.status-button.confirmed {
+  background-color: #28a745; /* Green */
+}
+
+.status-button.confirmed:hover {
+  background-color: #218838; /* Darker green */
+}
+
+.status-button.rejected {
+  background-color: #dc3545; /* Red */
+}
+
+.status-button.rejected:hover {
+  background-color: #c82333; /* Darker red */
+}
+
+.status-button.shipped {
+  background-color: #ffc107; /* Yellow */
+  color: #343a40; /* Dark text for readability */
+}
+
+.status-button.shipped:hover {
+  background-color: #e0a800; /* Darker yellow */
+}
+
+.status-button.delivered {
+  background-color: #17a2b8; /* Teal */
+}
+
+.status-button.delivered:hover {
+  background-color: #138496; /* Darker teal */
+}
